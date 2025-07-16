@@ -1,0 +1,74 @@
+.brand-story-header {
+    background-image: url(../img/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    color: white;
+    padding: 151px 0;
+}
+
+
+
+@media (max-width:767px) {
+    .brand-story-header {
+        background-image: url(../img/hero-sm.png);
+        background-size: 100% 100%;
+        padding: 0;
+
+    }
+
+    .hero-opacity {
+        background-color: rgba(0, 0, 0, 0.299);
+        padding: 87px 0;
+    }
+}
+
+
+.quote {
+    text-align: center;
+    border-radius: 4px;
+}
+
+@media (max-width:767px) {
+    .quote {
+        text-align: left;
+
+    }
+}
+
+.introduction .text {
+    text-align: justify;
+}
+
+
+.course-line {
+    border-left: 1px solid #212529;
+    margin: 0 8px;
+
+}
+
+.main-item-line {
+    border-right: 3px solid #DEE2E6;
+    margin-right: 12px;
+}
+
+
+.story i {
+    margin-right: 6.5px;
+    width: 20px;
+    height: 20px;
+    color: var(--Primary-400);
+    vertical-align: bottom;
+}
+
+.story a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: var(--Primary-400);
+    padding: 8px 0;
+}
+
+.story a:hover {
+    color: var(--Primary-500);
+}
