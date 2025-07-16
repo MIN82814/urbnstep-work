@@ -10,11 +10,13 @@
 
 <body>
     <%- include('./layout/navbar'); -%>
+        <div class="mb-24 d-none d-md-block"><img src="/assets/images/image.png" alt="Platform 404商品圖1">
+        </div>
         <main class="container">
-            <div class="row py-64">
-                <div class="col-7">
+            <div class="row py-64 py-md-0">
+                <div class="col-7 d-md-none">
                     <div class="product-row">
-                        <div class="product-col-6 mb-8"><img src="/assets/images/image.png" alt="Platform 404商品圖1">
+                        <div class="product-col-6mb-8"><img src="/assets/images/image.png" alt="Platform 404商品圖1">
                         </div>
                         <div class="product-col-6 mb-8"><img src="/assets/images/image-1.png" alt="Platform 404商品圖2">
                         </div>
@@ -30,10 +32,10 @@
                         <div class="product-col-6"><img src="/assets/images/image-7.png" alt="Platform 404商品圖8"></div>
                     </div>
                 </div>
-                <div class="col-5">
-                    <nav class="mb-12">
+                <div class="col-5 col-md-4">
+                    <nav class="mb-12 mb-md-8">
                         <ol class="d-flex">
-                            <li class="breadcrumb-item text-md">
+                            <li class="breadcrumb-item text-md ">
                                 <a href="index.html" class="breadcrumb-item-link">首頁</a>
                             </li>
                             <li class="breadcrumb-item text-md">
@@ -45,10 +47,11 @@
                             <li class="breadcrumb-item text-md">Platform 404</li>
                         </ol>
                     </nav>
-                    <div class="mb-32">
-                        <h1 class="h2 mb-16">Platform 404</h1>
+                    <div class="mb-32 ">
+                        <h1 class="h2 h4-md mb-16 mb-md-12">Platform 404</h1>
 
-                        <p class="h5 text-primary-400 mb-16">NT$2,600 <del class="text-sm price-del">NT$3,200</del>
+                        <p class="h5 h6-md text-primary-400 mb-16  mb-md-12">NT$2,600 <del
+                                class="text-sm price-del">NT$3,200</del>
                         </p>
 
                         <p class="mb-12">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
@@ -60,18 +63,18 @@
                             <a href="#">
                                 <div class="me-8 product-color">
                                     <img src="/assets/images/product.png" alt="藍色鞋子圖" class="mb-4">
-                                    <p>藍色</p>
+                                    <p class="text-md">藍色</p>
                                 </div>
                             </a>
                             <a href="#">
                                 <div class="me-8 product-color">
                                     <img src="/assets/images/product-1.png" alt="藍色鞋子圖" class="mb-4">
-                                    <p>卡其色</p>
+                                    <p class="text-md">卡其色</p>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="mb-48">
+                    <div class="mb-48 mb-md-24">
                         <h3 class="mb-8">尺寸</h3>
                         <div class="d-flex flex-wrap gap-8 mb-8">
                             <button type="button" class="btn product-size-btn active">35(22.5cm)</button>
@@ -90,8 +93,11 @@
                         <button type="button" class="btn btn-light me-8">
                             <i class="bi bi-heart"></i>加入收藏
                         </button>
-                        <button type="button" class="btn btn-dark me-8">
+                        <button type="button" class="btn btn-dark me-8 cart">
                             <i class="bi bi-handbag"></i>門市預約試穿
+                        </button>
+                        <button type="button" class="btn like">
+                            <i class="bi bi-heart"></i>
                         </button>
 
                     </div>
@@ -122,25 +128,25 @@
                 </div>
             </div>
             </div>
-            <div class=" py-48 mb-40">
+            <div class=" py-48 py-md-40 mb-40 mb-md-24">
                 <h3 class="mb-16 h4">你可能也喜歡...</h3>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-3 col-md-4">
                         <img src="/assets/images/product-2.png" alt="VM001商品圖" class="mb-12">
                         <h2 class="h6 mb-4">VM001</h2>
                         <p class="text-md">NT$2,600</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 d-md-none">
                         <img src="/assets/images/product-3.png" alt="Melty Kiss商品圖" class="mb-12">
                         <h2 class="h6 mb-4">Melty Kiss</h2>
                         <p class="text-md">NT$4,000</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 d-md-none">
                         <img src="/assets/images/product-4.png" alt="BOOMBLOK商品圖" class="mb-12">
                         <h2 class="h6 mb-4">BOOMBLOK</h2>
                         <p class="text-md">NT$3,200</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 d-md-none">
                         <img src="/assets/images/product-7.png" alt="Sugar Snap" class="mb-12">
                         <h2 class="h6 mb-4">Sugar Snap</h2>
                         <p class="text-md">NT$3,200</p>

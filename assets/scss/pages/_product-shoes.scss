@@ -11,17 +11,28 @@
     width: calc((100%/12)*6);
 }
 
+@media (max-width:767px) {
+    .product-md-col {
+        padding-left: 4px;
+        padding-right: 4px;
+        width: 100%;
+    }
+}
+
+/*原價樣式*/
 .price-del {
     color: var(--neutral-500);
     padding-left: 8px;
 }
 
+/*顏色*/
 .product-color {
     width: 64px;
     text-align: center;
     color: var(--neutral-600);
 }
 
+/*尺寸*/
 .product-size-btn {
     border: 1px solid var(--neutral-300);
     font-weight: 500;
@@ -33,6 +44,7 @@
     border: 1px solid var(--neutral-900);
 }
 
+/*預約試穿/加入收藏按鈕*/
 .product-action {
     display: flex;
     gap: 8px;
@@ -40,12 +52,49 @@
 
 .product-action .btn {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .product-action .bi {
     padding-right: 8px;
+    font-size: 20px;
+
 }
 
+.product-action .like {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .product-action .btn {
+        width: 86%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        display: none;
+    }
+
+    .product-action .cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-action .like {
+        width: 14%;
+        display: block;
+    }
+
+    .product-action .like .bi {
+        font-size: 24px;
+        padding-right: 0s;
+    }
+
+}
+
+/*商品注意事項*/
 .product-info-item p {
     color: var(--neutral-600);
 }
