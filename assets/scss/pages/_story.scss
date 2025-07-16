@@ -1,5 +1,5 @@
 .brand-story-header {
-    background-image: url(../img/hero.png);
+    background-image: url(../assets/imageshero.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -12,7 +12,7 @@
 
 @media (max-width:767px) {
     .brand-story-header {
-        background-image: url(../img/hero-sm.png);
+        background-image: url(../assets/images/hero-sm.png);
         background-size: 100% 100%;
         padding: 0;
 

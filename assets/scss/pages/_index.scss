@@ -17,7 +17,7 @@
 }
 
 .index-header {
-  background-image: url(/img/index-header.png);
+  background-image: url(/assets/images/index-header.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,7 +32,7 @@
 @media (max-width:767px) {
 
   .index-header {
-    background-image: url(/img/index-header-sm.png);
+    background-image: url(/assets/images/index-header-sm.png);
     padding-top: 155px;
     padding-bottom: 155px;
   }
@@ -55,7 +55,7 @@
 }
 
 .new-carousel {
-  background-image: url(/img/new-carousel.png);
+  background-image: url(/assets/images/new-carousel.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -64,7 +64,7 @@
 
 @media (max-width:767px) {
   .new-carousel {
-    background-image: url(/img/new-carousel-sm.png);
+    background-image: url(/assets/images/new-carousel-sm.png);
     padding: 64px 0;
   }
 }
