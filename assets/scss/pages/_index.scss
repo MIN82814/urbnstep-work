@@ -54,6 +54,7 @@
   background-color: var(--Primary-100);
 }
 
+/*最新消息-聯名*/
 .new-carousel {
   background-image: url(/assets/images/new-carousel.png);
   background-size: cover;
@@ -62,13 +63,37 @@
   padding: 100px 0;
 }
 
+.star {
+  display: none;
+}
+
+.sparkle {
+  display: none;
+}
+
 @media (max-width:767px) {
   .new-carousel {
     background-image: url(/assets/images/new-carousel-sm.png);
     padding: 64px 0;
+    position: relative;
+  }
+
+  .star {
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: -28px;
+  }
+
+  .sparkle {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    right: -42px;
   }
 }
 
+/*依系列選購*/
 .sort-card {
   padding-top: 100%;
   /* 維持正方形比例 */
