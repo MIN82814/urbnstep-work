@@ -250,7 +250,7 @@
     flex-direction: column;
 }
 
-.flex-grow {
+.flex-grow-1 {
     flex-grow: 1;
 }
 
@@ -269,6 +269,18 @@
 
     .d-md-block {
         display: block;
+    }
+
+    .d-md-contents {
+        display: contents;
+    }
+
+    .column-md-gap-16 {
+        column-gap: 16px;
+    }
+
+    .overflow-md-auto {
+        overflow-x: auto;
     }
 }
 
