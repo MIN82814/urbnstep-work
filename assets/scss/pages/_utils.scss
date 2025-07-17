@@ -246,6 +246,10 @@
     text-align: center;
 }
 
+.text-align-end {
+    text-align: end;
+}
+
 .flex-column {
     flex-direction: column;
 }
@@ -438,6 +442,10 @@
     margin-right: auto;
 }
 
+.ms-2 {
+    margin-left: 2px;
+}
+
 .mb-4 {
     margin-bottom: 4px;
 }
@@ -460,6 +468,10 @@
 
 .mb-16 {
     margin-bottom: 16px;
+}
+
+.me-16 {
+    margin-right: 16px;
 }
 
 .mb-24 {
@@ -589,6 +601,8 @@
     padding: 12px;
 }
 
+
+
 .py-16 {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -614,6 +628,10 @@
 
 .p-32 {
     padding: 32px;
+}
+
+.pb-32 {
+    padding-bottom: 32px;
 }
 
 .py-48 {
