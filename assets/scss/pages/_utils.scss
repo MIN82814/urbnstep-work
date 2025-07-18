@@ -208,8 +208,7 @@
 }
 
 
-/*flex相關*/
-
+/*排版相關*/
 .d-flex {
     display: flex;
 }
@@ -274,6 +273,9 @@
     .d-md-block {
         display: block;
     }
+    .text-align-md-s{
+        text-align: left;
+    }
 
     .d-md-contents {
         display: contents;
@@ -297,6 +299,21 @@
         display: block;
     }
 }
+
+
+/*段行*/
+.br-d-none{
+    display: none;
+}
+    
+
+@media (max-width:767px) {
+   .br-md-inline{
+    display: inline;
+}
+}
+
+
 
 
 
@@ -527,6 +544,9 @@
         margin-bottom: 8px;
     }
 
+    .ms-md-10{
+        margin-left: 10px;
+    }
     .mb-md-12 {
         margin-bottom: 12px;
     }

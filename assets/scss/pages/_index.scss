@@ -3,17 +3,22 @@
   text-align: center;
 }
 
-.nav-md-menu li a {
+.Primary-100-bn a{
   background: var(--Primary-100);
-}
-
-.nav-md-menu li a:hover {
-  background: var(--Primary-200);
   color: var(--neutral-900);
 }
 
-.nav-md-menu .active {
+.Primary-100-bn a:hover {
   background: var(--Primary-200);
+  color: var(--neutral-900);
+}
+.Primary-200-bn a{
+  background: var(--Primary-200);
+  color: var(--neutral-900);
+}
+.Primary-200-bn a:hover {
+  background: var(--Primary-100);
+  color: var(--neutral-900);
 }
 
 .index-header {
