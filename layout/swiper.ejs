@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 3000, // 每 3 秒切換
+            disableOnInteraction: false, // 使用者滑動後仍會繼續自動播放
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 32,
+            },
+        },
+    });
+</script>

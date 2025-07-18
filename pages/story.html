@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-  <title>品牌故事-URBNSTEP</title>
+  <%- include('./layout/head'); %>
+    <title>品牌故事-URBNSTEP</title>
 </head>
 
 <body>
-  <%- include('./layout/navbar'); -%>
+  <%- include('./layout/navbar'); %>
     <header class="brand-story-header mb-64 mb-md-32">
       <div class="hero-opacity">
         <h1 class="h1 mb-16 h3-sm">
@@ -126,9 +126,10 @@
         </article>
       </main>
     </div>
-    <%- include('./layout/footer'); -%>
+    <%- include('./layout/register-sale'); %>
+      <%- include('./layout/footer'); %>
 
-      <script type="module" src="../main.js"></script>
+        <script type="module" src="../main.js"></script>
 </body>
 
 </html>

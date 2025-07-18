@@ -1,23 +1,50 @@
-.login-bg{
+.member-bg {
     background-image: url(/assets/images/login-bg.png);
-}
-.login-bn{
-width: 76%;
-display: flex;
-margin: 0 auto;
-}
-.login-bn-item{
-width: 50%;
-text-align: center;
-color: var(--neutral-600);
-border-bottom: 2px solid var(--neutral-300);
-}
-.login-bn-item a{
-color: var(--neutral-600);
-border-bottom: 2px solid var(--neutral-300);
-}
-.login-bn-item .active{
-    color: var(--neutral-900);
-border-bottom: 2px solid var(--neutral-900);
+    border-radius: 12px;
 }
 
+.w-76 {
+    width: 76%;
+}
+
+.member-bn {
+    width: 50%;
+    text-align: center;
+    color: var(--neutral-600);
+    border-bottom: 2px solid var(--neutral-300);
+}
+
+.member-bn a {
+    color: var(--neutral-600);
+    border-bottom: 2px solid var(--neutral-300);
+}
+
+.member-bn a:hover {
+    color: var(--neutral-900);
+    border-bottom: 2px solid var(--neutral-900);
+}
+
+.member-bn .active {
+    color: var(--neutral-900);
+    border-bottom: 2px solid var(--neutral-900);
+}
+
+.social-bn {
+    border: 1px solid var(--neutral-300);
+    border-radius: 12px;
+}
+
+.social-bn:hover {
+    border: 1px solid var(--neutral-600);
+}
+
+@media(max-width:767px) {
+    .member-bg {
+        background-image: none;
+
+    }
+
+    .w-md-100 {
+        width: 100%;
+    }
+}
