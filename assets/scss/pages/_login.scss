@@ -1,0 +1,23 @@
+.login-bg{
+    background-image: url(/assets/images/login-bg.png);
+}
+.login-bn{
+width: 76%;
+display: flex;
+margin: 0 auto;
+}
+.login-bn-item{
+width: 50%;
+text-align: center;
+color: var(--neutral-600);
+border-bottom: 2px solid var(--neutral-300);
+}
+.login-bn-item a{
+color: var(--neutral-600);
+border-bottom: 2px solid var(--neutral-300);
+}
+.login-bn-item .active{
+    color: var(--neutral-900);
+border-bottom: 2px solid var(--neutral-900);
+}
+
