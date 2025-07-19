@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.Primary-100-bn a{
+.Primary-100-bn a {
   background: var(--Primary-100);
   color: var(--neutral-900);
 }
@@ -12,10 +12,12 @@
   background: var(--Primary-200);
   color: var(--neutral-900);
 }
-.Primary-200-bn a{
+
+.Primary-200-bn a {
   background: var(--Primary-200);
   color: var(--neutral-900);
 }
+
 .Primary-200-bn a:hover {
   background: var(--Primary-100);
   color: var(--neutral-900);
@@ -65,37 +67,50 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+}
+
+.new-carousel-text {
+  position: relative;
   padding: 100px 0;
 }
 
 .star {
-  display: none;
+  position: absolute;
+  top: 72.24px;
+  width: 48px;
+  left: calc(50% - 397px);
 }
 
 .sparkle {
-  display: none;
+  position: absolute;
+  bottom: 132px;
+  width: 76px;
+  right: calc(50% - 354px);
 }
 
 @media (max-width:767px) {
   .new-carousel {
     background-image: url(/assets/images/new-carousel-sm.png);
-    padding: 64px 0;
-    position: relative;
     overflow: hidden;
   }
 
+  .new-carousel-text {
+    padding: 64px 0;
+  }
+
+
   .star {
-    display: block;
     position: absolute;
     top: 32px;
-    left: -28px;
+    left: -20px;
+
   }
 
   .sparkle {
-    display: block;
     position: absolute;
     bottom: 80px;
-    right: -42px;
+    right: -30px;
   }
 }
 
@@ -126,7 +141,7 @@
 }
 
 .sort-card .text {
-  width: 80%;
+  width: 90%;
   position: absolute;
   text-align: center;
   top: 50%;

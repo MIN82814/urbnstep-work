@@ -239,6 +239,11 @@
     gap: 8px;
 }
 
+.gap-24 {
+    gap: 24px
+}
+
+
 .d-none {
     display: none;
 }
@@ -276,6 +281,7 @@
 }
 
 @media (max-width:767px) {
+
     .d-md-none {
         display: none;
     }
@@ -284,6 +290,9 @@
         display: block;
     }
 
+    .flex-md-column {
+        flex-direction: column;
+    }
 
     .text-align-md-s {
         text-align: left;
@@ -427,6 +436,10 @@
         line-height: 1.2;
     }
 
+    .text-md-400 {
+        font-weight: 400;
+    }
+
 
 }
 
@@ -556,6 +569,7 @@
         margin-bottom: 8px;
     }
 
+
     .ms-md-10 {
         margin-left: 10px;
     }
@@ -578,6 +592,10 @@
 
     .mb-md-40 {
         margin-bottom: 40px;
+    }
+
+    .mt-md-8 {
+        margin-top: 8px;
     }
 
 }
