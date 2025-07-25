@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body {
     line-height: 1.5;
-    color: var(--neutral-900);
+    color: $neutral-900;
     font-family: "Montserrat", "Noto Sans TC", sans-serif;
     letter-spacing: 0.05em;
 }
@@ -10,14 +12,15 @@ body {
 a {
     display: block;
     text-decoration: none;
-    color: var(--neutral-900);
+    color: $neutral-900;
+
+    &:hover {
+        color: $neutral-600;
+    }
 }
 
-a:hover {
-    color: var(--neutral-600);
-}
 
 button {
     font-family: "Montserrat", "Noto Sans TC", sans-serif;
-    color: var(--neutral-900);
+    color: $neutral-900;
 }

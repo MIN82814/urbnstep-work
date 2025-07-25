@@ -1,6 +1,16 @@
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
 .member-bg {
     background-image: url(/assets/images/login-bg.png);
     border-radius: 12px;
+
+    @include mobile {
+        background-image: none;
+    }
 }
 
 .w-76 {
@@ -10,41 +20,37 @@
 .member-bn {
     width: 50%;
     text-align: center;
-    color: var(--neutral-600);
-    border-bottom: 2px solid var(--neutral-300);
-}
+    color: $neutral-600;
 
-.member-bn a {
-    color: var(--neutral-600);
-    border-bottom: 2px solid var(--neutral-300);
-}
+    a {
+        color: $neutral-600;
+        border-bottom: 2px solid $neutral-300;
 
-.member-bn a:hover {
-    color: var(--neutral-900);
-    border-bottom: 2px solid var(--neutral-900);
-}
+        &:hover {
+            color: $neutral-900;
+            border-bottom: 2px solid $neutral-900;
+        }
+    }
 
-.member-bn .active {
-    color: var(--neutral-900);
-    border-bottom: 2px solid var(--neutral-900);
+    .active {
+        color: $neutral-900;
+        border-bottom: 2px solid $neutral-900;
+    }
 }
 
 .social-bn {
-    border: 1px solid var(--neutral-300);
+    border: 1px solid $neutral-300;
     border-radius: 12px;
-}
+    background-color: $neutral-0;
 
-.social-bn:hover {
-    border: 1px solid var(--neutral-600);
-}
-
-@media(max-width:767px) {
-    .member-bg {
-        background-image: none;
+    &:hover {
+        background-color: $neutral-100;
 
     }
+}
 
-    .w-md-100 {
+.w-md-100 {
+    @include mobile {
         width: 100%;
     }
 }

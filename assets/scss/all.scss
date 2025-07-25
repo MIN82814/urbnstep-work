@@ -1,8 +1,7 @@
-@import './pages/reset.scss';
+@import './base/reset.scss';
 @import './helpers/variables.scss';
-@import './pages/base.scss';
-@import './pages/utils.scss';
-@import './pages/components.scss';
+@import './base/base.scss';
+@import './helpers/utils.scss';
 @import './layout/navbar.scss';
 @import './layout/footer.scss';
 @import './pages/index.scss';
@@ -12,3 +11,5 @@
 @import './pages/product-shoes.scss';
 @import './pages/favorites.scss';
 @import './pages/login.scss';
+@import './components/breadcrumb.scss';
+@import './components/pagination.scss';

@@ -1,0 +1,31 @@
+@mixin mobile {
+    @media (max-width:767px) {
+        @content;
+    }
+}
+
+/*麵包屑*/
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &+.breadcrumb-item::before {
+        content: '/';
+        padding: 0 12px;
+        color: $neutral-300;
+        font-weight: 700;
+
+        @include mobile {
+            padding: 0 8px;
+        }
+    }
+
+    &-link {
+        color: $neutral-600;
+    }
+}

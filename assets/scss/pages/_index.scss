@@ -1,27 +1,39 @@
+@mixin mobile {
+  @media (max-width:767px) {
+    @content;
+  }
+}
+
 .nav-md-menu li {
   width: 50%;
   text-align: center;
 }
 
-.Primary-100-bn a {
-  background: var(--Primary-100);
-  color: var(--neutral-900);
+.Primary-100-bn {
+  a {
+    background: $Primary-100;
+    color: $neutral-900;
+
+    &:hover {
+      background: $Primary-200;
+      color: $neutral-900;
+    }
+  }
 }
 
-.Primary-100-bn a:hover {
-  background: var(--Primary-200);
-  color: var(--neutral-900);
+
+.Primary-200-bn {
+  a {
+    background: $Primary-200;
+    color: $neutral-900;
+
+    &:hover {
+      background: $Primary-100;
+      color: $neutral-900;
+    }
+  }
 }
 
-.Primary-200-bn a {
-  background: var(--Primary-200);
-  color: var(--neutral-900);
-}
-
-.Primary-200-bn a:hover {
-  background: var(--Primary-100);
-  color: var(--neutral-900);
-}
 
 .index-header {
   background-image: url(/assets/images/index-header.png);
@@ -30,22 +42,19 @@
   background-position: center;
   padding-top: 289px;
   padding-bottom: 288px;
-}
 
-.index-header .header-text {
-  padding-left: 200px;
-}
-
-@media (max-width:767px) {
-
-  .index-header {
+  @include mobile {
     background-image: url(/assets/images/index-header-sm.png);
     padding-top: 155px;
     padding-bottom: 155px;
   }
 
-  .index-header .header-text {
-    padding-left: 24px;
+  .header-text {
+    padding-left: 200px;
+
+    @include mobile {
+      padding-left: 24px;
+    }
   }
 }
 
@@ -55,10 +64,10 @@
 
 .hot-tag {
   position: absolute;
-  color: var(--Primary-400);
+  color: $Primary-400;
   padding: 8px 12px;
   font-weight: 500;
-  background-color: var(--Primary-100);
+  background-color: $Primary-100;
 }
 
 /*最新消息-聯名*/
@@ -68,11 +77,19 @@
   background-repeat: no-repeat;
   background-position: center;
 
-}
+  @include mobile {
+    background-image: url(/assets/images/new-carousel-sm.png);
+    overflow: hidden;
+  }
 
-.new-carousel-text {
-  position: relative;
-  padding: 100px 0;
+  &-text {
+    position: relative;
+    padding: 100px 0;
+
+    @include mobile {
+      padding: 64px 0;
+    }
+  }
 }
 
 .star {
@@ -80,6 +97,11 @@
   top: 72.24px;
   width: 48px;
   left: calc(50% - 397px);
+
+  @include mobile {
+    top: 32px;
+    left: -20px;
+  }
 }
 
 .sparkle {
@@ -87,90 +109,68 @@
   bottom: 132px;
   width: 76px;
   right: calc(50% - 354px);
-}
 
-@media (max-width:767px) {
-  .new-carousel {
-    background-image: url(/assets/images/new-carousel-sm.png);
-    overflow: hidden;
-  }
-
-  .new-carousel-text {
-    padding: 64px 0;
-  }
-
-
-  .star {
-    position: absolute;
-    top: 32px;
-    left: -20px;
-
-  }
-
-  .sparkle {
-    position: absolute;
+  @include mobile {
     bottom: 80px;
     right: -30px;
   }
 }
 
+
 /*依系列選購*/
 .sort-card {
   padding-top: 100%;
-  /* 維持正方形比例 */
-
   background-size: cover;
   background-position: center;
   overflow: hidden;
   display: block;
   position: relative;
-}
 
-.sort-card .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-.sort-card .overlay:hover {
-  background-color: rgba(0, 0, 0, 0.101);
-}
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.101);
+    }
 
-.sort-card .text {
-  width: 90%;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+    .text {
+      width: 90%;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+  }
 }
 
 /*圖片牆*/
 .outfit img {
   max-width: 100%;
   min-width: 0;
-  /*  用於解決 flex 子元素溢出問題，參考文章：https://juejin.cn/post/7307041255740833830  */
   display: block;
   object-fit: cover;
-}
 
-.w-66 {
-  width: 66%;
-}
-
-.w-33 {
-  width: 33%;
-}
-
-@media (max-width:767px) {
-  .outfit img {
+  @include mobile {
     width: 300px;
     height: 300px;
     min-width: auto;
+  }
+}
+
+.w {
+  &-66 {
+    width: 66%;
+  }
+
+  &-33 {
+    width: 33%;
   }
 }
