@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <%- include('./layout/head'); %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('./layout/head'); %>
     <title>品牌故事-URBNSTEP</title>
-</head>
+  </head>
 
-<body>
-  <%- include('./layout/navbar'); %>
+  <body>
+    <%- include('./layout/navbar'); %>
     <header class="brand-story-header mb-64 mb-md-32">
       <div class="hero-opacity">
         <h1 class="h1 mb-16 h3-sm">
@@ -20,7 +19,9 @@
     </header>
     <div class="container">
       <main class="row justify-center">
-        <article class="quote col-8 col-md-4 mb-48 mb-md-32 p-32 p-md-24 bg-primary-100">
+        <article
+          class="quote col-8 col-md-4 mb-48 mb-md-32 p-32 p-md-24 bg-primary-100"
+        >
           <h2 class="h5 mb-12 text-primary-400">
             走出城市的節奏，穿上自己的步調。
           </h2>
@@ -34,7 +35,7 @@
             </p>
           </div>
         </article>
-        <article>
+        <article class="container">
           <div class="row justify-center">
             <div class="col-10 col-md-4 mb-24 mb-md-16">
               <img src="/assets/images/about.png" alt="URBNSTEP鞋子圖" />
@@ -67,15 +68,18 @@
                   <h2 class="mb-24 mb-md-16 h4 h5-md">品牌歷程</h2>
                   <ol class="main-item-list">
                     <li class="mb-12">
-                      <time datetime="2019"> ·2019</time><span class="course-line"></span>在台北東區的創意工作室誕生。
+                      <time datetime="2019"> 2019</time
+                      ><span class="course-line"></span
+                      >在台北東區的創意工作室誕生。
                     </li>
                     <li class="mb-12">
-                      <time datetime="2021"> ·2021</time>
+                      <time datetime="2021"> 2021</time>
                       <span class="course-line"></span>首款【Urban Flow
                       系列】誕生，結合針織鞋面與城市靈感。
                     </li>
                     <li>
-                      <time datetime="2025"> ·2025 </time><span class="course-line"></span>URBNSTEP
+                      <time datetime="2025"> 2025 </time
+                      ><span class="course-line"></span>URBNSTEP
                       已成為台灣街頭生活風格的代表鞋履品牌之一。
                     </li>
                   </ol>
@@ -86,14 +90,16 @@
                   <h2 class="mb-24 mb-md-16 h4 h5-md">品牌理念</h2>
                   <ul>
                     <li class="mb-12">
-                      <span class="main-item-line"></span>機能先行：輕量、透氣、防潑水
+                      <span class="main-item-line"></span
+                      >機能先行：輕量、透氣、防潑水
                     </li>
                     <li class="mb-12">
                       <span class="main-item-line"></span>美學延伸：極簡線條 +
                       實驗配色
                     </li>
                     <li>
-                      <span class="main-item-line"></span>永續材料：選用環保合成皮革與可回收包裝
+                      <span class="main-item-line"></span
+                      >永續材料：選用環保合成皮革與可回收包裝
                     </li>
                   </ul>
                 </div>
@@ -104,7 +110,8 @@
                   <ul>
                     <li class="text-md">
                       <a href="#">
-                        <i class="bi bi-arrow-up-right"></i>創辦人筆記：我們為什麼想做鞋？
+                        <i class="bi bi-arrow-up-right"></i
+                        >創辦人筆記：我們為什麼想做鞋？
                       </a>
                     </li>
                     <li class="text-md">
@@ -126,10 +133,8 @@
         </article>
       </main>
     </div>
-    <%- include('./layout/register-sale'); %>
-      <%- include('./layout/footer'); %>
+    <%- include('./layout/register-sale'); %> <%- include('./layout/footer'); %>
 
-        <script type="module" src="../main.js"></script>
-</body>
-
+    <script type="module" src="../main.js"></script>
+  </body>
 </html>
